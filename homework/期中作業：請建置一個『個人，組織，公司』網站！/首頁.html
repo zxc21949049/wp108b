@@ -67,56 +67,103 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+h2
+        {
+            font-size: 40px;
+            font-family: 微軟正黑體;
+        }
+
+p
+        {
+            font-size: 40px;
+            font-family: 微軟正黑體;
+        }
+
+
 </style>
 </head>
 <body>
-  <h2><img src="01.jpg"width="100" height="100">
+    <h2><img src="01.jpg"width="100" height="100">
       曾智暐</h2>
-      <div class="navbar">
-        <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E9%A6%96%E9%A0%81.html">首頁</a>
-        <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E6%9C%8B%E5%8F%8B.html">室友</a>
-        <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E7%9B%B8%E7%89%87.html">相片</a>
-        <div class="dropdown">
-          <button class="dropbtn">關於
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E5%B7%A5%E4%BD%9C%E7%B6%93%E6%AD%B7.html">工作經歷</a>
-            <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E7%8F%BE%E5%B1%85%E5%9F%8E%E5%B8%82%E8%88%87%E5%AE%B6%E9%84%89.html">現居城市與家鄉</a>
-            <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E8%81%AF%E7%B5%A1%E8%B3%87%E6%96%99.html">聯絡資料</a>
-            <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E5%AE%B6%E5%BA%AD%E6%88%90%E5%93%A1.html">家庭成員</a>
-          </div>
-        </div> 
-      </div>
-      
-      <h2>性&emsp;&emsp;別：獸</h2>
-      <h2>出生日期：02/12</h2>
-      <h2>出生年份：2001</h2>
-      <h2>學&emsp;&emsp;號：110810508</h2>
-      <h2>班&emsp;&emsp;級：資工一</h2>
-      <h2>無宗教信仰 無政治立場</h2>
-      
-      
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="https://www.facebook.com/profile.php?id=100006570009428">FB</a>
-        <a href="https://www.instagram.com/zxc21949049/">IG</a>
-        <a href="https://twitter.com/home">Twitter</a>
-        <a href="https://www.youtube.com/channel/UCSk_hfoDGeQLQfbPumcq49w/featured?view_as=subscriber">YouTube</a>
-      </div>
-      
-      
-      <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; 網站和社交連結</span>
-      
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-      </script>
-      
-      </body>
-      </html>
+<div class="navbar">
+  <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E9%A6%96%E9%A0%81.html">首頁</a>
+  <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E6%9C%8B%E5%8F%8B.html">室友</a>
+  <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E7%9B%B8%E7%89%87.html">相片</a>
+  <div class="dropdown">
+    <button class="dropbtn">關於
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E5%B7%A5%E4%BD%9C%E7%B6%93%E6%AD%B7.html">工作經歷</a>
+      <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E7%8F%BE%E5%B1%85%E5%9F%8E%E5%B8%82%E8%88%87%E5%AE%B6%E9%84%89.html">現居城市與家鄉</a>
+      <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E8%81%AF%E7%B5%A1%E8%B3%87%E6%96%99.html">聯絡資料</a>
+      <a href="https://zxc21949049.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD%EF%BC%9A%E8%AB%8B%E5%BB%BA%E7%BD%AE%E4%B8%80%E5%80%8B%E3%80%8E%E5%80%8B%E4%BA%BA%EF%BC%8C%E7%B5%84%E7%B9%94%EF%BC%8C%E5%85%AC%E5%8F%B8%E3%80%8F%E7%B6%B2%E7%AB%99%EF%BC%81/%E5%AE%B6%E5%BA%AD%E6%88%90%E5%93%A1.html">家庭成員</a>
+    </div>
+  </div> 
+</div>
+
+<h2>性&emsp;&emsp;別：獸</h2>
+<h2>出生日期：02/12</h2>
+<h2>出生年份：2001</h2>
+<h2>學&emsp;&emsp;號：110810508</h2>
+<h2>班&emsp;&emsp;級：資工一</h2>
+<h2>無宗教信仰 無政治立場</h2>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://www.facebook.com/profile.php?id=100006570009428">FB</a>
+  <a href="https://www.instagram.com/zxc21949049/">IG</a>
+  <a href="https://twitter.com/home">Twitter</a>
+  <a href="https://www.youtube.com/channel/UCSk_hfoDGeQLQfbPumcq49w/featured?view_as=subscriber">YouTube</a>
+</div>
+
+
+<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; 網站和社交連結</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</body>
+</html>
